@@ -94,13 +94,13 @@ select {
     background-color: #4CAF50;
     color: white;
     padding: 15px 15px;
-    padding-top: 5px;
     border: none;
     border-radius: 20px;
     margin-left: 5px;
     margin-right: 5px;
     cursor: pointer;
-    height: 25px;
+    height: 35px;
+    padding-top: 10px;
     width: 325px;
     display: flex;
     justify-content: center;
@@ -163,11 +163,36 @@ select {
 }
 
 .landingpage .aboutus h1{
-    padding:20px;
+    padding:30px 20px 30px 20px;
+    padding-bottom: 17px;
 }
 
 .landingpage .aboutus p{
-    padding: 20px;
+    padding: 0px 20px 0px 20px;
+}
+
+.textt {
+    color: black;
+    font-size: 20px;
+    font-family: 'Jost', sans-serif;
+}
+
+.title {
+    color: black;
+    font-size: 30px;
+    font-family: 'Jost', sans-serif;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.small-title{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.small-p{
+    font-size: 18px;
 }
 
 .landingpage .ThreeOptions{
@@ -178,6 +203,7 @@ select {
 
 .landingpage .ThreeOptions .theoptions{
     margin: 50px 40px 20px 0px;
+    padding: 20px 20px 20px 20px;
     background-color: white;
     text-align: center;
     height: 200px;
@@ -364,6 +390,7 @@ select {
     background: #12652d;
 }
 
+<<<<<<< Updated upstream
 .textt {
     color: black;
     font-size: 20px;
@@ -377,3 +404,5 @@ select {
     font-weight: bold;
     margin: 10px;
 }
+=======
+>>>>>>> Stashed changes
