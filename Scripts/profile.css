@@ -1,0 +1,139 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color: #f2f2f2;
+}
+
+.profile-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 80%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.profile-picture {
+	flex-basis: 30%;
+	margin-right: 5%;
+    
+}
+
+.profile-picture img {
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+	flex-basis: 65%;
+}
+
+.profile-name {
+	font-size: 2.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.role {
+	font-size: 1.2rem;
+	margin-bottom: 1.5rem;
+}
+
+.bio {
+	font-size: 1rem;
+	margin-bottom: 2rem;
+	line-height: 1.5;
+}
+
+.skills-heading,
+.socials-heading,
+.projects-heading {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.skills-list,
+.socials-list,
+.projects-list {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 2rem;
+}
+
+.skill-item,
+.social-item,
+.project-item {
+	flex-basis: calc(33.33% - 10px);
+	margin-right: 10px;
+	margin-bottom: 10px;
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill-item:nth-child(3n+4),
+.social-item:nth-child(3n+4),
+.project-item:nth-child(3n+4) {
+	margin-right: 0;
+}
+
+.social-link {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: #333;
+}
+
+.social-text {
+	margin-left: 10px;
+}
+
+.project-link {
+	display: block;
+	text-decoration: none;
+	color: #333;
+	padding: 10px;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+	background-color: #f2f2f2;
+}
+
+@media (max-width: 768px) {
+	.profile-container {
+		flex-direction: column;
+	}
+
+	.profile-picture {
+		flex-basis: 100%;
+		margin-right: 0;
+		margin-bottom: 2rem;
+	}
+
+	.profile-info {
+		flex-basis: 100%;
+	}
+
+	.skill-item,
+	.social-item,
+	.project-item {
+		flex-basis: 100%;
+		margin-right: 0;
+	}
+}
