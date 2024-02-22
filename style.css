@@ -10,6 +10,7 @@ body {
     margin: 0;
     font-family: 'Jost', sans-serif;
     background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+    color: white;
 }
 
 /* Header Code */
@@ -25,8 +26,8 @@ header {
     height: 64px;
     width: 100%;
     line-height: 45px;
-    background-color: #161617;
-    color: white;
+    background-color: #e7eaf6;
+    color: black;
     position: fixed;
 }
 
