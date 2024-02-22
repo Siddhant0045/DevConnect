@@ -114,6 +114,13 @@ select {
     margin-left: 5px;
 }
 
+.gol-button-1{
+    display: flex;
+    align-items: center;
+    width: 50px;
+    margin-left: 5px;
+}
+
 /* Landing Page */
 
 .landingpage-bg{
@@ -297,3 +304,24 @@ select {
     align-items: center;
 }
 
+.buttn button {
+    width: 190px;
+	height: 40px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: #fff;
+	background: #098d35;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 20px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .2s ease-in;
+	cursor: pointer;
+}
+
+.buttn button:hover {
+    background: #12652d;
+}
