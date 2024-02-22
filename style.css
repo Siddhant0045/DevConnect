@@ -315,6 +315,10 @@ select {
     padding-left: 20px;
 }
 
+.peopleworkingonit a{
+    color: white;
+}
+
 .peopleworkingonit ul{
     display: grid;
     place-items: left;
