@@ -1,7 +1,6 @@
 header {
   background-color: #333;
   padding: 15px;
-  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,7 +8,7 @@ header {
   height: 64px;
   width: 100%;
   line-height: 45px;
-  background-color: #161617;
+  background: linear-gradient(to bottom, #1f1c3a, #272350, #34346d);
   color: white;
   position: fixed;
 }
@@ -74,22 +73,24 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
   }
   
   .container {
     width: 80%;
     margin: 0 auto;
     padding: 2rem;
-    padding-top: 64px;
+    padding-top: 100px; /* Adjust the value to move the container down */
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 20px 50px #000;
     border-radius: 4px;
+    background: red;
+    background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover;
   }
   
   h1 {
     font-size: 2.5rem;
-    color: #333;
+    color: #fff;
     margin-bottom: 2rem;
   }
   
@@ -104,7 +105,7 @@ body {
     width: 100%;
     margin: 0 0 1rem 0;
     font-size: 1.2rem;
-    color: #333;
+    color: #fff;
   }
   
   form input[type="text"],
