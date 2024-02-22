@@ -247,6 +247,10 @@ select {
     padding-top: 20px;
 }
 
+.projectinfopage h1 {
+    color: black;
+}
+
 #youtubevideo{
     display: grid;
     place-items: center;
@@ -258,14 +262,32 @@ select {
     padding-top: 20px;
 }
 
+.readmecontriowner .textt1{
+    color: black;
+    font-size: 22px;
+    font-family: 'Jost', sans-serif;
+    text-align: justify;
+    margin: 10px;
+}
+
 .readmedoc{
     border: 1px solid black;
     margin-right: 20px;
     height: 500px;
 }
 
+.form-textbox {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
 .readmecontriowner .ReadMefile{
-    grid-row: span 2
+    grid-row: span 2;
 }
 
 .peopleworkingonit{
