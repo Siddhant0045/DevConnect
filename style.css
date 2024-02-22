@@ -389,20 +389,3 @@ select {
 .buttn button:hover {
     background: #12652d;
 }
-
-<<<<<<< Updated upstream
-.textt {
-    color: black;
-    font-size: 20px;
-    font-family: 'Jost', sans-serif;
-}
-
-.title {
-    color: black;
-    font-size: 30px;
-    font-family: 'Jost', sans-serif;
-    font-weight: bold;
-    margin: 10px;
-}
-=======
->>>>>>> Stashed changes
