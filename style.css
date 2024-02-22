@@ -9,14 +9,13 @@
 body {
     margin: 0;
     font-family: 'Jost', sans-serif;
-    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+    background-color: black;
     color: white;
 }
 
 /* Header Code */
 
 header {
-    background-color: #333;
     padding: 15px;
     color: white;
     display: flex;
@@ -26,14 +25,25 @@ header {
     height: 64px;
     width: 100%;
     line-height: 45px;
-    background-color: #e7eaf6;
-    color: black;
+    background-color: #161617;
+    color: white;
     position: fixed;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
+#logo {
+    height: 40px;
+    width: 40px;
+}
+
+.dev-connect{
+    display: flex;
+    align-items: center;
+}
+
+.dev-connect h1{
+    line-height: 32px;
+    font-size: 20px;
+    margin-left: 10px;
 }
 
 .align-right{
@@ -91,36 +101,52 @@ select {
 
 /* Landing Page */
 
+.landingpage-bg{
+    background-color: black;
+}
+
 .landingpage{
     height: 100vh;
     display: grid;
     grid-template-rows: 300px auto;
+    padding: 100px 10% 0px 10%;
+    background-color: #a8c3b0;
 }
 
 .landingpage .aboutus{
+    place-self: center;
+    width: 700px;
+    height: 250px;
+    background-color: white;
     text-align: center;
     margin-top: 45px;
-    color: white;
-    padding: 100px 10% 0px 10%;
+    color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.landingpage .aboutus h1{
+    padding:20px;
 }
 
 .landingpage .aboutus p{
-    padding-top: 20px;
+    padding: 20px;
 }
 
 .landingpage .ThreeOptions{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 0px 10% 0px 10%;
+    
 }
 
 .landingpage .ThreeOptions .theoptions{
-    margin: 20px;
+    margin: 50px 40px 20px 0px;
     background-color: white;
     text-align: center;
     height: 200px;
     display: grid;
     place-items: center;
+    color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
