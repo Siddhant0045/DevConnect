@@ -11,6 +11,8 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Header Code */
+
 header {
     background-color: #333;
     padding: 15px;
@@ -83,3 +85,5 @@ select {
     width: 50px;
     margin-left: 5px;
 }
+
+
