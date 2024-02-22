@@ -20,7 +20,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 45px;
+    padding: 16px 24px 16px 24px;
+    height: 64px;
     width: 100%;
     line-height: 45px;
     background-color: #161617;
@@ -88,6 +89,8 @@ select {
 
 /* Landing Page */
 
+/*
+
 .landingpage{
     height: 100vh;
     background-color: black;
@@ -118,6 +121,48 @@ select {
     text-align: center;
     height: 200px;
     display: grid;
-    place-items: center
-        ;
+    place-items: center;
 }
+
+*/
+
+
+/* Find Project Page */
+/*
+.projectpage{
+    padding-top: 64px;
+}
+
+.projectpage .seeproject{
+    display: grid;
+    padding: 20px 10% 20px 10%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.projectpage .projectview{
+    padding: 20px 10% 20px 10%;
+    display: grid;
+    grid-template-columns: 60px auto;
+}
+
+.projectpage .projectview img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.MuiDivider-root {
+    border: none;
+    height: 1px;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.12);
+}
+
+.projectpage .projectview a{
+    color: black;
+}
+
+.projectpage .projectview .projectdescription{
+    display: grid;
+}
+*/
