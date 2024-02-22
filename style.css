@@ -89,8 +89,6 @@ select {
 
 /* Landing Page */
 
-/*
-
 .landingpage{
     height: 100vh;
     background-color: black;
@@ -124,11 +122,9 @@ select {
     place-items: center;
 }
 
-*/
-
 
 /* Find Project Page */
-/*
+
 .projectpage{
     padding-top: 64px;
 }
@@ -165,4 +161,25 @@ select {
 .projectpage .projectview .projectdescription{
     display: grid;
 }
-*/
+
+.projectinfopage{
+    padding-top: 64px;
+    text-align: center;
+}
+
+.projectinfopage .projectinfo{
+    padding: 20px 10% 20px 10%;
+    display: grid;
+    text-align: center;
+}
+
+.projectinfopage .projectinfo h1{
+    text-align: left;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#youtubevideo{
+    display: grid;
+    place-items: center;
+}
