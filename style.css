@@ -254,6 +254,10 @@ select {
     display: grid;
 }
 
+.projectdescription .projectName{
+    padding: 5px 0px 5px 0px;
+}
+
 /* ProjectInfoPage */
 
 .projectinfopage{
