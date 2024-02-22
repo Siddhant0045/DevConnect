@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.register-box {
+	width: 400px;
+	background: #fff;
+	padding: 25px 30px;
+	border-radius: 5px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-box h2 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.textbox {
+	position: relative;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.textbox1 {
+    display: flex;
+    gap: 10px;
+}
+
+.textbox input {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #333;
+	background: #f2f2f2;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	padding-left: 40px;
+}
+
+.textbox i {
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	transform: translateY(-50%);
+	color: #333;
+	font-size: 20px;
+	transition: 0.3s;
+}
+
+.textbox input:focus ~ i,
+.textbox input:valid ~ i {
+	color: #71b7e6;
+	transform: translateY(-50%) scale(1.3);
+}
+
+.register-box input[type="submit"] {
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+	color: #fff;
+	background: #71b7e6;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background 0.3s ease;
+}
+
+.register-box input[type="submit"]:hover {
+	background: #5b9bd1;
+}
