@@ -45,8 +45,6 @@ header {
     text-align: right;
 }
 
-
-
 select {
     padding: 8px;
     border: 1px solid #ccc;
@@ -79,17 +77,37 @@ select {
 }
 /* /+ */
 
+.login-page{
+	padding-top: 64px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	place-items: center;
+}
+
 body{
-	margin: 0;
-	padding: 0;
-	display: flex;
-	justify-content: center;
-	/* align-items: center; */
-	min-height: 100vh;
+	margin: 0px;
+	padding: 0px;
 	font-family: 'Jost', sans-serif;
-	/* background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e); */
 	background-color: #a8c3b0;
 }
+
+.login-page-motivation{
+	background-color: #a8c3b0;
+	width: 100%;
+	height: 90vh;
+	display: grid;
+	place-content: center;
+	padding-left: 20%;
+}
+
+.login-page-motivation h1{
+	font-size: 50px;
+}
+
+.login-page-motivation p{
+	font-size: 25px;
+}
+
 .main{
 	width: 350px;
 	height: 500px;
@@ -99,8 +117,8 @@ body{
 	border-radius: 10px;
 	box-shadow: 5px 20px 50px #000;
 	background-color: #839e8c;
-	margin-top: 114px;
 }
+
 #chk{
 	display: none;
 }
