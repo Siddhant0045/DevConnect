@@ -36,6 +36,7 @@ header {
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 70px;
   place-items: right;
+  margin-right: 50px;
 }
 
 .search-bar {
