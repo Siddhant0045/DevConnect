@@ -288,18 +288,17 @@ select {
     padding-top: 20px;
 }
 
-.readmecontriowner .textt1{
-    color: black;
-    font-size: 22px;
-    font-family: 'Jost', sans-serif;
-    text-align: justify;
-    margin: 10px;
-}
-
 .readmedoc{
     border: 1px solid black;
     margin-right: 20px;
     height: 500px;
+}
+
+.readmedoc .textt1{
+    color: black;
+    padding: 10px;
+    text-align: left;
+    font-size: 20px;
 }
 
 .form-textbox {
@@ -310,10 +309,6 @@ select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-}
-
-.readmecontriowner .ReadMefile{
-    grid-row: span 2;
 }
 
 .peopleworkingonit{
