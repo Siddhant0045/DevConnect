@@ -1,3 +1,82 @@
+/* Header Code */
+
+header {
+    padding: 15px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px 16px 24px;
+    height: 64px;
+    width: 100%;
+    line-height: 45px;
+    background-color: #161617;
+    color: white;
+    position: fixed;
+}
+
+#logo {
+    height: 40px;
+    width: 40px;
+}
+
+.dev-connect{
+    display: flex;
+    align-items: center;
+}
+
+.dev-connect h1{
+    line-height: 32px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.align-right{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 70px;
+    place-items: right;
+}
+
+.search-bar {
+    display: flex;
+    align-items: right;
+    text-align: right;
+}
+
+
+
+select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.round-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 15px;
+    border: none;
+    border-radius: 20px;
+    margin: 5px;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+}
+
+.dev-connect {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.gol-button{
+    display: flex;
+    align-items: center;
+    width: 50px;
+    margin-left: 5px;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -8,9 +87,8 @@
 body {
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	min-height: 100vh;
-	background-color: #f2f2f2;
+	background-color: #a8c3b0;
 }
 
 .profile-container {
@@ -21,6 +99,7 @@ body {
 	width: 80%;
 	max-width: 1200px;
 	margin: 0 auto;
+	margin-top: 94px;
 }
 
 .profile-picture {
@@ -79,10 +158,10 @@ body {
 	flex-basis: calc(33.33% - 10px);
 	margin-right: 10px;
 	margin-bottom: 10px;
-	background-color: #fff;
+	background-color: rgb(240, 240, 240);
 	padding: 10px;
 	border-radius: 5px;
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.51);
 }
 
 .skill-item:nth-child(3n+4),
