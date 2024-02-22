@@ -86,4 +86,38 @@ select {
     margin-left: 5px;
 }
 
+/* Landing Page */
 
+.landingpage{
+    height: 100vh;
+    background-color: black;
+    display: grid;
+    grid-template-rows: 300px auto;
+}
+
+.landingpage .aboutus{
+    text-align: center;
+    margin-top: 45px;
+    color: white;
+    padding: 100px 10% 0px 10%;
+}
+
+.landingpage .aboutus p{
+    padding-top: 20px;
+}
+
+.landingpage .ThreeOptions{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0px 10% 0px 10%;
+}
+
+.landingpage .ThreeOptions .theoptions{
+    margin: 20px;
+    background-color: white;
+    text-align: center;
+    height: 200px;
+    display: grid;
+    place-items: center
+        ;
+}
