@@ -1,38 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>Slide Navbar</title>
-	<link rel="stylesheet" type="text/css" href="login.css">
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../style.css" rel="stylesheet">
 </head>
+
 <body>
-	<header>
-        <div class="dev-connect" onclick="window.location.href = '../index.html';"><img id="logo" src="../Images/weblogo_w.png"> <h1>DevConnect</h1></div>
+
+    <!--- Header Code -->
+    
+    <header>
+        <div class="dev-connect"><img id="logo" src="../Images/weblogo_w.png"> <h1>DevConnect</h1></div>
         <div class="align-right">
-            
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <select>
+                    <option value="option1">Users</option>
+                    <option value="option2">Project</option>
+                </select>
+            </div>
+            <div class="gol-button">
+                <button class="round-button" onclick="window.location.href = 'notification.html';"><img id="bellimage" src="../Images/bell.png"></button>
+                <button class="round-button" onclick="window.location.href = 'profile.html';"><img id="profileicon" src="../Images/Default_pfp.svg.png"></button>
+            </div>
         </div>
     </header>
-	<div class="main">  	
-		<input type="checkbox" id="chk" aria-hidden="true">
-			<div class="login">
-				<form>
-					<label for="chk" aria-hidden="true">Login</label>
-					<input type="text" name="txt" placeholder="User name" required="">
-					<input type="password" name="pswd" placeholder="Password" required="">
-					<button>Confirm</button>
-				</form>
-			</div>
 
-			<div class="signup">
-				<form>
-					<label for="chk" aria-hidden="true">Sign Up</label>
-					<input type="text" name="txt" placeholder="Full Name" required="">
-					<input type="text" name="txt" placeholder="Username" required="">
-					<input type="password" name="pswd" placeholder="Password" required="">
-					<input type="password" name="pswd" placeholder="Confirm Password" required="">
-					<button>Confirm</button>
-				</form>
-			</div>
-	</div>
+    <!-- Your content goes here -->
+    <div class="landingpage-bg">
+        <div class="landingpage">
+            <div class="aboutus">
+                <h1>About Us</h1>
+                <p>Welcome to Devconnect, the ultimate platform for developers to seamlessly connect and collaborate on projects! Devconnect revolutionizes the way developers find their perfect project match by providing a dynamic space where like-minded individuals can connect based on their unique skills and project requirements.</p>
+            </div>
+            <div class="ThreeOptions">
+                <div class="theoptions createproject">
+                    <div>Create New Project</div>
+                    <button onclick="window.location.href = 'createProject.html';">+ Create New Project</button>
+                </div>
+                <div class="theoptions findprojects">
+                    <div>Find Project</div>
+                    <button onclick="window.location.href = 'findprojectpage.html';">Find Projects</button>
+                </div>
+                <div class="theoptions myprojects">
+                    <div>My Projects</div>
+                    <button onclick="window.location.href = 'myprojects.html';">My Projects</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
