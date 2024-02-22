@@ -44,7 +44,14 @@ header {
   text-align: right;
 }
 
-
+input[type="text"] {
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin-right: 0px;
+}
 
 select {
   padding: 8px;
@@ -59,10 +66,25 @@ select {
   padding: 15px 15px;
   border: none;
   border-radius: 20px;
-  margin: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
   cursor: pointer;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+#bellimage{
+  align-self: center;
   height: 20px;
   width: 20px;
+}
+
+#profileicon{
+  align-self: center;
+  height: 30px;
+  width: 30px;
 }
 
 .dev-connect {
@@ -107,13 +129,13 @@ body {
     margin-bottom: 2rem;
   }
   
-  form {
+  .container form {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -0.5rem;
   }
   
-  form label {
+  .container form label {
     display: block;
     width: 100%;
     margin: 0 0 1rem 0;
@@ -121,9 +143,9 @@ body {
     color: #fff;
   }
   
-  form input[type="text"],
-  form input[type="url"],
-  form input[type="number"] {
+  .container form input[type="text"],
+  .container form input[type="url"],
+  .container form input[type="number"] {
     width: 100%;
     padding: 0.5rem;
     margin: 0 0 1rem 0;
@@ -133,7 +155,7 @@ body {
     line-height: 1.5;
   }
   
-  form textarea {
+  .container form textarea {
     width: 100%;
     padding: 0.5rem;
     margin: 0 0 1rem 0;
@@ -144,7 +166,7 @@ body {
     resize: vertical;
   }
   
-  form input[type="submit"] {
+  .container form input[type="submit"] {
     width: 100%;
     padding: 0.5rem;
     margin: 0 0 1rem 0;
@@ -156,22 +178,22 @@ body {
     cursor: pointer;
   }
   
-  form input[type="submit"]:hover {
+  .container form input[type="submit"]:hover {
     background-color: #45a049;
   }
   
   @media (min-width: 768px) {
-    form label {
+    .container form label {
       width: 50%;
     }
   
-    form input[type="text"],
-    form input[type="url"],
-    form input[type="number"] {
+   .container  form input[type="text"],
+   .container  form input[type="url"],
+   .container  form input[type="number"] {
       width: 100%;
     }
   
-    form textarea {
+    .container form textarea {
       width: 100%;
     }
   }
@@ -181,17 +203,17 @@ body {
       width: 60%;
     }
   
-    form label {
+    .container form label {
       width: 33.33%;
     }
   
-    form input[type="text"],
-    form input[type="url"],
-    form input[type="number"] {
+    .container form input[type="text"],
+    .container form input[type="url"],
+    .container form input[type="number"] {
       width: 100%;
     }
   
-    form textarea {
+    .container form textarea {
       width: 100%;
     }
   }
