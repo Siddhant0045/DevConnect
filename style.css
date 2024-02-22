@@ -9,6 +9,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
 }
 
 /* Header Code */
@@ -91,7 +92,6 @@ select {
 
 .landingpage{
     height: 100vh;
-    background-color: black;
     display: grid;
     grid-template-rows: 300px auto;
 }
