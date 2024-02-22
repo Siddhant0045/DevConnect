@@ -221,3 +221,35 @@ select {
     color: white;
     width: 200px;
 }
+
+.notification{
+    padding-top: 64px;
+}
+
+.notification-subclass{
+    display: grid;
+    padding: 20px 10% 20px 10%;
+}
+
+.button-notification{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.user-noti{
+    display: grid;
+    grid-template-columns: 60px auto;
+    padding-top: 20px;
+}
+
+.user-noti img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.user-message-noti{
+    display: flex;
+    align-items: center;
+}
+
