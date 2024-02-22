@@ -9,7 +9,7 @@
 body {
     margin: 0;
     font-family: 'Jost', sans-serif;
-    background-color: black;
+    background-color: #a8c3b0;
     color: white;
 }
 
@@ -169,6 +169,7 @@ select {
 
 .projectpage{
     padding-top: 64px;
+
 }
 
 .projectpage .seeproject{
