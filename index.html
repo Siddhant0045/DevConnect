@@ -1,65 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./style.css" rel="stylesheet">
+	<title>Slide Navbar</title>
+	<link rel="stylesheet" type="text/css" href="./Scripts/login.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-    <!--- Header Code -->
-    
-    <header>
-        <div class="dev-connect" onclick="window.location.href = './Scripts/login.html';"><img id="logo" src="./Images/weblogo_w.png"><h1>DevConnect</h1></div>
+	<header>
+        <div class="dev-connect" onclick="window.location.href = './Scripts/login.html';"><img id="logo" src="../Images/weblogo_w.png"> <h1>DevConnect</h1></div>
         <div class="align-right">
-            <div class="search-bar">
-                <input type="text" placeholder="Search...">
-                <select>
-                    <option value="option1">Users</option>
-                    <option value="option2">Project</option>
-                </select>
-            </div>
-            <div class="gol-button">
-                <button class="login-button" onclick="window.location.href = './Scripts/login.html';">Login</button>
-            </div>
+            
         </div>
     </header>
+	<div class="login-page">
+	<div class="login-page-motivation">
+		<div>
+			<h1>Having Trouble finishing <br>your project?</h1>
+		</div>
+		<div>
+			<p>Collaborate with other coders across the world and expand your network</p>
+		</div>
+	</div>
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+			<div class="login">
+				<form>
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="text" name="txt" placeholder="User name" required="">
+					<input type="password" name="pswd" placeholder="Password" required="">
+					<button onclick="window.location.href = './Scripts/landingpage.html';">Confirm</button>
+				</form>
+			</div>
 
-    <!-- Your content goes here -->
-    <div class="landingpage-bg">
-        <div class="landingpage">
-            <div class="aboutus">
-                <h1>DEV CONNECT</h1>
-                <p class="textt">Welcome to Devconnect, the ultimate platform for developers to seamlessly connect and collaborate on projects! Devconnect revolutionizes the way developers find their perfect project match by providing a dynamic space where like-minded individuals can connect based on their unique skills and project requirements.</p>
-            </div>
-                <div class="ThreeOptions">
-                <div class="theoptions createproject">
-                    <div class="small-title">Create New Project</div>
-                    <p class="small-p">Start a new project and find the perfect team to work with</p>
-                    <div class="buttn">
-                    <button onclick="window.location.href = './Scripts/login.html';">Create New Project</button>
-                    </div>
-                </div>
-                <div class="theoptions findprojects">
-                    <div class="small-title">Find Project</div>
-                    <p class="small-p">Find projects that you are interested in and join the team</p>
-                    <div class="buttn">
-                    <button onclick="window.location.href = './Scripts/login.html';">Find Projects</button>
-                    </div>
-                </div>
-                
-                <div class="theoptions myprojects">
-                    <div class="small-title">My Projects</div>
-                    <p class="small-p">View and manage your projects</p>
-                    <div class="buttn">
-                    <button onclick="window.location.href = './Scripts/login.html';">My Projects</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+			<div class="signup">
+				<form>
+					<label for="chk" aria-hidden="true">Sign Up</label>
+					<input type="text" name="txt" placeholder="Full Name" required="">
+					<input type="text" name="txt" placeholder="Username" required="">
+					<input type="password" name="pswd" placeholder="Password" required="">
+					<input type="password" name="pswd" placeholder="Confirm Password" required="">
+					<button>Confirm</button>
+				</form>
+			</div>
+	</div>	
+	</div>
 </body>
-
 </html>
