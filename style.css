@@ -254,8 +254,18 @@ select {
     display: grid;
 }
 
+.projectdescription .username{
+    padding-bottom: 5px;
+}
+
 .projectdescription .projectName{
     padding: 5px 0px 5px 0px;
+}
+
+.react-on-post{
+    padding-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 /* ProjectInfoPage */
