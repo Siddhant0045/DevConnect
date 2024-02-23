@@ -222,8 +222,14 @@ select {
 }
 
 .projectpage .seeproject{
+    display: none;
+    padding: 20px 10% 0px 10%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.projectpage .seeproject1{
     display: grid;
-    padding: 20px 10% 20px 10%;
+    padding: 20px 10% 0px 10%;
     grid-template-columns: 1fr 1fr;
 }
 
@@ -262,10 +268,58 @@ select {
     padding: 5px 0px 5px 0px;
 }
 
-.react-on-post{
-    padding-top: 15px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.seeproject .recommended-button{
+    background-color: #161617;
+    color: white;
+    height: 40px;
+    font-size: 15px;
+    font-family: 'Jost',sans-serif;
+    border: grey;
+    border-top-left-radius: 20px;
+}
+
+.seeproject1 .recommended-button{
+    background-color: #a5a5a5;
+    color: white;
+    height: 40px;
+    font-size: 15px;
+    font-family: 'Jost',sans-serif;
+    border: grey;
+    border-top-left-radius: 20px;
+}
+
+.seeproject .recommended-button:hover{
+    background-color: black;
+}
+
+.seeproject .allproject-button{
+    background-color: #a5a5a5;
+    color: white;
+    height: 40px;
+    font-size: 15px;
+    font-family: 'Jost',sans-serif;
+    border: grey;
+    border-top-right-radius: 20px;
+}
+
+.seeproject1 .allproject-button{
+    background-color: #161617;
+    color: white;
+    height: 40px;
+    font-size: 15px;
+    font-family: 'Jost',sans-serif;
+    border: grey;
+    border-top-right-radius: 20px;
+}
+
+.seeproject1 .allproject-button:hover{
+    background-color: black;
+}
+
+.recommended-view{
+    margin: 0px 10% 0px 10%;
+    background-color: #a5a5a5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* ProjectInfoPage */
