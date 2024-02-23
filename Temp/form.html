@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baked Goods Form</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: fit-content;
+            margin: 0 auto;
+        }
+
+        .form-label {
+            margin-bottom: 5px;
+        }
+
+        .quantity-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .quantity-input {
+            width: 30px;
+            text-align: center;
+        }
+
+        .button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Select your baked goods</h1>
+        <form id="bakedGoodsForm">
+            <div class="form-group">
+                <label for="applePie" class="form-label">Apple Pie</label>
+                <div class="quantity-container">
+                    <button onclick="decrementQuantity('applePie')">-</button>
+                    <input type="number" id="applePie" name="applePie" value="0" class="quantity-input">
+                    <button onclick="incrementQuantity('applePie')">+</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="strawberryPie" class="form-label">Strawberry Pie</label>
+                <div class="quantity-container">
+                    <button onclick="decrementQuantity('strawberryPie')">-</button>
+                    <input type="number" id="strawberryPie" name="strawberryPie" value="0" class="quantity-input">
+                    <button onclick="incrementQuantity('strawberryPie')">+</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="coconutCreamPie" class="form-label">Coconut Cream Pie</label>
+                <div class="quantity-container">
+                    <button onclick="decrementQuantity('coconutCreamPie')">-</button>
+                    <input type="number" id="coconutCreamPie" name="coconutCreamPie" value="0" class="quantity-input">
+                    <button onclick="incrementQuantity('coconutCreamPie')">+</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="caramelApplePie" class="form-label">Caramel Apple Pie</label>
+                <div class="quantity-container">
+                    <button onclick="decrementQuantity('caramelApplePie')">-</button>
+                    <input type="number" id="caramelApplePie" name="caramelApplePie" value="0" class="quantity-input">
+                    <button onclick="incrementQuantity('caramelApplePie')">+</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="chocolateCookies" class="form-label">Chocolate Cookies (min 10 pieces)</label>
+                <div class="quantity-container">
+                    <button onclick="decrementQuantity('chocolateCookies')">-</button>
+                    <input type="number" id="chocolateCookies" name="chocolateCookies" value="0" class="quantity-input">
+                    <button onclick="incrementQuantity('chocolateCookies')">+</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="peanutButterCookies" class="form-label">Peanut Butter Cookies (min 10 pieces)</label>
+                <div class="quantity-container">
+                    <button onclick="decrementQuantity('peanutButterCookies')">-</button>
+                    <input type="number" id="peanutButterCookies" name="peanutButterCookies" value="0" class="quantity-input">
+                    <button onclick="incrementQuantity('peanutButterCookies')">+</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function incrementQuantity(id) {
+            const input = document.getElementById(id);
+            input.value = parseInt(input.value) + 1;
+        }
+
+        function decrementQuantity(id) {
+            const input = document.getElementById(id);
+            if (parseInt(input.value) > 0) {
+                input.value = parseInt(input.value) - 1;
+            }
+        }
+    </script>
+</body>
+</html>
+    
