@@ -412,9 +412,16 @@ select {
     padding: 20px 10% 20px 10%;
 }
 
-.button-notification{
+.button-notification1{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    height: 40px;
+}
+
+.button-notification1 button{
+    background-color: black;
+    color: white;
+    font-family: 'Jost',sans-serif;
 }
 
 .user-noti{
