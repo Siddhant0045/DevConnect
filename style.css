@@ -262,14 +262,10 @@ select {
     padding: 5px 0px 5px 0px;
 }
 
-.projectdescription .projectdetails{
-    padding-bottom: 10px;
-}
-
 .react-on-post{
     padding-top: 15px;
     display: grid;
-    grid-template-columns: 265px 265px 265px;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 /* ProjectInfoPage */
