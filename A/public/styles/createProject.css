@@ -1,0 +1,224 @@
+header {
+  padding: 15px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px 16px 24px;
+  height: 32px;
+  width: 100%;
+  line-height: 45px;
+  background-color: #161617;
+  color: white;
+  position: fixed;
+}
+
+#logo {
+  height: 40px;
+  width: 40px;
+}
+
+.dev-connect{
+  display: flex;
+  align-items: center;
+}
+
+.dev-connect h1{
+  line-height: 32px;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.align-right{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 70px;
+  place-items: right;
+  margin-right: 50px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: right;
+  text-align: right;
+}
+
+input[type="text"] {
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin-right: 0px;
+}
+
+select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.round-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 15px;
+  border: none;
+  border-radius: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+#bellimage{
+  align-self: center;
+  height: 20px;
+  width: 20px;
+}
+
+#profileicon{
+  align-self: center;
+  height: 30px;
+  width: 30px;
+}
+
+.dev-connect {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.gol-button{
+  display: flex;
+  align-items: center;
+  width: 50px;
+  margin-left: 5px;
+}
+/* /+ */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #a8c3b0;
+    text-shadow: 0.1px 0.2px 0.5px #000;
+  }
+
+  .cont1 {
+    padding-top: 64px;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 50px;
+    padding-top: 10px; /* Adjust the value to move the container down */
+    background-color: #fff;
+    box-shadow: 5px 20px 50px #000;
+    border-radius: 4px;
+    background-color: #839e8c;
+    /* background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover; */
+  }
+  
+  .container h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 2rem;
+  }
+  
+  .container form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -0.5rem;
+  }
+  
+  .container form label {
+    display: block;
+    width: 100%;
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  
+  .container form input[type="text"],
+  .container form input[type="url"],
+  .container form input[type="number"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0 0 1rem 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  
+  .container form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0 0 1rem 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    resize: vertical;
+  }
+  
+  .container form input[type="submit"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0 0 1rem 0;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .container form input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  @media (min-width: 768px) {
+    .container form label {
+      width: 50%;
+    }
+  
+   .container  form input[type="text"],
+   .container  form input[type="url"],
+   .container  form input[type="number"] {
+      width: 100%;
+    }
+  
+    .container form textarea {
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      width: 60%;
+    }
+  
+    .container form label {
+      width: 33.33%;
+    }
+  
+    .container form input[type="text"],
+    .container form input[type="url"],
+    .container form input[type="number"] {
+      width: 100%;
+    }
+  
+    .container form textarea {
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      width: 50%;
+    }
+  }

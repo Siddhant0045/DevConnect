@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--- Header Code -->
+    
+    <header>
+        <div class="dev-connect" onclick="window.location.href = './Scripts/login.html';"><img id="logo" src="./Images/weblogo_w.png"><h1>DevConnect</h1></div>
+        <div class="align-right">
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <select>
+                    <option value="option1">Users</option>
+                    <option value="option2">Project</option>
+                </select>
+            </div>
+            <div class="gol-button">
+                <form action = "/LogiN" method = "post">
+                    <button type = "submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Your content goes here -->
+    <div class="landingpage-bg">
+        <div class="landingpage">
+            <div class="aboutus">
+                <h1>DEV CONNECT</h1>
+                <p class="textt">Welcome to Devconnect, the ultimate platform for developers to seamlessly connect and collaborate on projects! Devconnect revolutionizes the way developers find their perfect project match by providing a dynamic space where like-minded individuals can connect based on their unique skills and project requirements.</p>
+            </div>
+            <div class="ThreeOptions">
+                <div class="theoptions createproject">
+                    <div class="title">Create New Project</div>
+                    <p class="textt">Start a new project and find the perfect team to work with</p>
+                    <div class="buttn">
+                        
+                        <form action = "/LogiN" method = "post">
+                            <button type = "submit">+ Create New Project</button>
+                        </form>
+                    </div>  
+                </div>
+                <div class="theoptions findprojects">
+                    <div class="title">Find Project</div>
+                    <p class="textt">Find projects that you are interested in and join the team</p>
+                    <div class="buttn">
+                    
+                        <form action = "/LogiN" method = "post">
+                            <button type = "submit">Find Projects</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="theoptions myprojects">
+                    <div class="title">My Projects</div>
+                    <p class="textt">View and manage your projects</p>
+                    <div class="buttn">
+                        <form action = "/Login" method = "post">
+                            <button type = "submit">My Projects</button>
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
