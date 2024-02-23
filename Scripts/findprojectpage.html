@@ -26,8 +26,15 @@
 
     <div class="projectpage">
         <div class="seeproject">
-            <button class="recommended-button">Recommended</button>
+            <button onclick="AllProjectfunc()" class="recommended-button">Recommended</button>
             <button class="allproject-button">All Project</button>
+            <hr class="MuiDivider-root">
+            <hr class="MuiDivider-root">
+        </div>
+        <div class="seeproject1">
+            <button class="recommended-button">Recommended</button>
+            <button onclick="Recommendedfunc()" class="allproject-button">All Project</button>
+            <hr class="MuiDivider-root">
             <hr class="MuiDivider-root">
         </div>
         
@@ -82,5 +89,23 @@
             <hr class="MuiDivider-root">
         </div></div>
     </div>
+
+    <script>
+        function Recommendedfunc(){
+            const seeproject = document.querySelector('.seeproject');
+            const seeproject1 = document.querySelector('.seeproject1');
+
+            seeproject.style.display = 'grid';
+            seeproject1.style.display = 'none';
+        }
+
+        function AllProjectfunc(){
+            const seeproject = document.querySelector('.seeproject');
+            const seeproject1 = document.querySelector('.seeproject1');
+
+            seeproject.style.display = 'none';
+            seeproject1.style.display = 'grid';
+        }
+    </script>
 </body>
 </html>
