@@ -37,22 +37,107 @@
       <label for="video_url">Upload Video URL:</label><br>
       <input type="url" id="video_url" name="video_url" required><br>
 
-      <label for="roles">Roles Required for the Project:</label><br>
+      <!-- <label for="roles">Roles Required for the Project:</label><br>
       <input type="text" id="roles" name="roles"  required><br>
 
       <label for="num_participants">Number of Individuals Needed:</label><br>
-      <input type="number" id="num_participants" name="num_participants" min="1" max="100" required><br>
-
-      <label for="skills">Skills Required for the Project:</label><br>
-      <input type="text" id="skills" name="skills"  required><br>
-
-      <label for="topics">Topics the Project Falls Into:</label><br>
-      <input type="text" id="topics" name="topics"  required><br>
+      <input type="number" id="num_participants" name="num_participants" min="1" max="100" required><br> -->
+<h1>Select your roles</h1>
+      <div class="form-container">
+        
+        <form id="bakedGoodsForm">
+            <div class="form-group">
+              <input type="checkbox" id="applePiel" name="applePie" value="Front End Developer">
+                <label for="applePie" class="form-label">Front End Developer</label>
+                <div class="quantity-container">
+                    <button onclick="decrementQuantity('applePie')">-</button>
+                    <input type="number" id="applePie" name="applePie" value="0" min="0" class="quantity-input">
+                    <button onclick="incrementQuantity('applePie')">+</button>
+                </div>
+            </div>
+            <div class="form-group">
+              <input type="checkbox" id="strawberryPiell" name="strawberryPie" value="Back End Developer">
+                <label for="strawberryPie" class="form-label">Back End Developer</label>
+                <div class="quantity-container">
+                    <button onclick="decrementQuantity('strawberryPie')">-</button>
+                    <input type="number" id="strawberryPie" name="strawberryPie" value="0" min="0" class="quantity-input">
+                    <button onclick="incrementQuantity('strawberryPie')">+</button>
+                </div>
+            </div>
+            <div class="form-group">
+              <input type="checkbox" id="coconutCreamPiel" name="coconutCreamPie" value="AI Developer">
+                <label for="coconutCreamPie" class="form-label">AI Developer</label>
+                <div class="quantity-container">
+                    <button onclick="decrementQuantity('coconutCreamPie')">-</button>
+                    <input type="number" id="coconutCreamPie" name="coconutCreamPie" value="0" min="0" class="quantity-input">
+                    <button onclick="incrementQuantity('coconutCreamPie')">+</button>
+                </div>
+            </div>
+            <div class="form-group">
+              <input type="checkbox" id="caramelApplePiel" name="caramelApplePie" value="Software Engineer">
+                <label for="caramelApplePie" class="form-label">Software Engineer</label>
+                <div class="quantity-container">
+                    <button onclick="decrementQuantity('caramelApplePie')">-</button>
+                    <input type="number" id="caramelApplePie" name="caramelApplePie" value="0" min="0" class="quantity-input">
+                    <button onclick="incrementQuantity('caramelApplePie')">+</button>
+                </div>
+            </div>
+            <div class="form-group">
+              <input type="checkbox" id="chocolateCookiesl" name="chocolateCookies" value="VR/XR Game Developer">
+                <label for="chocolateCookies" class="form-label">VR/XR Game Developer</label>
+                <div class="quantity-container">
+                    <button onclick="decrementQuantity('chocolateCookies')">-</button>
+                    <input type="number" id="chocolateCookies" name="chocolateCookies"  value="0" min="0" class="quantity-input">
+                    <button onclick="incrementQuantity('chocolateCookies')">+</button>
+                </div>
+            </div>
+            <div class="form-group">
+              <input type="checkbox" id="peanutButterCookiesl" name="peanutButterCookies" value="Data Analyst">
+                <label for="peanutButterCookies" class="form-label">Data Analyst</label>
+                <div class="quantity-container">
+                    <button onclick="decrementQuantity('peanutButterCookies')">-</button>
+                    <input type="number" id="peanutButterCookies" name="peanutButterCookies" value="0" min="0" class="quantity-input">
+                    <button onclick="incrementQuantity('peanutButterCookies')">+</button>
+                </div>
+            </div>
+          </div>
+      <div class="drop">
+      <h1>Select skills that your require</h1>
+      <select name="skills" id="skills">
+        <option value="python">Python</option>
+        <option value="c++">C++</option>
+        <option value="c#">C#</option>
+        <option value="java">Java</option>
+      </select>
+      
+      <h1>Select the topics of your project</h1>
+      <select name="topics" id="topics">
+        <option value="game">Game</option>
+        <option value="ai">AI</option>
+        <option value="ml">ML</option>
+        <option value="social">Social Networking</option>
+      </select>
+    </div>
+      
 
       <input type="submit" value="Submit">
     </form>
   </div>
 </div>
+</div>
+<script>
+  function incrementQuantity(id) {
+      const input = document.getElementById(id);
+      input.value = parseInt(input.value) + 1;
+  }
+
+  function decrementQuantity(id) {
+      const input = document.getElementById(id);
+      if (parseInt(input.value) > 0) {
+          input.value = parseInt(input.value) - 1;
+      }
+  }
+</script>
 </body>
 
 </html>

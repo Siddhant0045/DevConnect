@@ -135,7 +135,16 @@ body {
     flex-wrap: wrap;
     margin: 0 -0.5rem;
   }
-  
+  input[type='number']{
+    height:5px;
+  }
+  button{
+    height:23px;
+  }
+  input[type='checkbox']{
+    height:20px;
+    margin: 0 0 1rem 0;
+  }
   .container form label {
     display: block;
     width: 100%;
@@ -205,7 +214,7 @@ body {
     }
   
     .container form label {
-      width: 33.33%;
+      width: 200%;
     }
   
     .container form input[type="text"],
@@ -224,3 +233,37 @@ body {
       width: 50%;
     }
   }
+
+.form-container {
+  margin: auto
+}
+
+.quantity-container {
+  display: flex;
+  margin-left:100px;
+  margin-bottom: 20px;
+}
+.form-group{
+  display:grid;
+  grid-template: 33% 33% 33% /33% 33% 33%;
+  
+}
+
+.drop {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#skills {
+  height: 50px
+}
+
+.drop h1{
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+#topics{
+  height: 50px;
+}
+
